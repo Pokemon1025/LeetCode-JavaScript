@@ -8,9 +8,15 @@
 
 图解：
 
-[2的三次方 - 8的二进制表示](https://zhuyue-1257159284.cos.ap-chengdu.myqcloud.com/LeetCode231-1.png?q-sign-algorithm=sha1&q-ak=AKIDCQYGpV59vjVASnoZRMwLEBWmJkHoAzwb&q-sign-time=1554524356;1554525256&q-key-time=1554524356;1554525256&q-header-list=&q-url-param-list=&q-signature=38d38ec72fc96a46ab4c1f5276a8014d5c01710c)
+* 2的三次方 - 8的二进制表示
 
-[7的二进制表示](https://zhuyue-1257159284.cos.ap-chengdu.myqcloud.com/LeetCode231-2.png?q-sign-algorithm=sha1&q-ak=AKIDCQYGpV59vjVASnoZRMwLEBWmJkHoAzwb&q-sign-time=1554529618;1554530518&q-key-time=1554529618;1554530518&q-header-list=&q-url-param-list=&q-signature=b5420dfae606b4f1a8662711d0b540205a9bd53d)
+![2的三次方 - 8的二进制表示](https://zhuyue-1257159284.cos.ap-chengdu.myqcloud.com/LeetCode231-1.png?q-sign-algorithm=sha1&q-ak=AKIDCQYGpV59vjVASnoZRMwLEBWmJkHoAzwb&q-sign-time=1554530294;1554531194&q-key-time=1554530294;1554531194&q-header-list=&q-url-param-list=&q-signature=1a6701543ebe01a8fed35a0131885a4e99b76086)
+
+* 7的二进制表示
+
+![7的二进制表示](https://zhuyue-1257159284.cos.ap-chengdu.myqcloud.com/LeetCode231-2.png?q-sign-algorithm=sha1&q-ak=AKIDCQYGpV59vjVASnoZRMwLEBWmJkHoAzwb&q-sign-time=1554529618;1554530518&q-key-time=1554529618;1554530518&q-header-list=&q-url-param-list=&q-signature=b5420dfae606b4f1a8662711d0b540205a9bd53d)
+
+
 
 > `n&(n-1)`作用：将n的二进制中的最低位为1的改为0。如：n = 10100，(n-1) = 10011 则 n&(n-1) = 10000。
 
