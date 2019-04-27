@@ -14,16 +14,16 @@
  */
 var preorder = function (root) {
     let res = [];
-    let postorderNode = (root) => {
+    let preOrderNode = (root) => {
         if (root !== null) {
             res.push(root.val);
             if (root.children) {
                 root.children.forEach(item => {
-                    postorderNode(item);
+                    preOrderNode(item);
                 });
             }
         }
     }
-    postorderNode(root);
+    preOrderNode(root);
     return res;
 };
