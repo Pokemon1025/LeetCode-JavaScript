@@ -1,31 +1,29 @@
 /**
- * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
- * }
- * 执行用时 : 124 ms, 在Minimum Absolute Difference in BST的JavaScript提交中击败了75.41% 的用户
- * 内存消耗: 38.4 MB, 在Minimum Absolute Difference in BST的JavaScript提交中击败了37.93% 的用户
- * 方法：中序遍历过程加判断
- * /
-/**
- * @param {TreeNode} root
- * @return {number}
+ * // Definition for a Node.
+ * function Node(val,children) {
+ *    this.val = val;
+ *    this.children = children;
+ * };
+ * 执行用时 : 956 ms, 在N-ary Tree Preorder Traversal的JavaScript提交中击败了89.36% 的用户
+ * 内存消耗 : 81.8 MB, 在N-ary Tree Preorder Traversal的JavaScript提交中击败了27.37% 的用户
+ * 方法：递归
  */
-var getMinimumDifference = function (root) {
-    let curr = null,
-        minDiff = Number.MAX_SAFE_INTEGER;
-    const dfs = node => {
-        if (!node) return [];
-        if (node.left) dfs(node.left);
-        if (curr == null) {
-            curr = node.val;
-        } else {
-            minDiff = Math.min(minDiff, node.val - curr);
-            curr = node.val;
+/**
+ * @param {Node} root
+ * @return {number[]}
+ */
+var preorder = function (root) {
+    let res = [];
+    let postorderNode = (root) => {
+        if (root !== null) {
+            res.push(root.val);
+            if (root.children) {
+                root.children.forEach(item => {
+                    postorderNode(item);
+                });
+            }
         }
-        if (node.right) dfs(node.right);
     }
-    dfs(root);
-    return minDiff;
+    postorderNode(root);
+    return res;
 };
