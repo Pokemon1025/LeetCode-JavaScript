@@ -6,7 +6,7 @@
 
 要考虑到4种情况：
 
-![相等的树判断依据](https://zhuyue-1257159284.cos.ap-chengdu.myqcloud.com/LeetCode/LeetCode-100.png?q-sign-algorithm=sha1&q-ak=AKIDCQYGpV59vjVASnoZRMwLEBWmJkHoAzwb&q-sign-time=1555651656;1555652556&q-key-time=1555651656;1555652556&q-header-list=&q-url-param-list=&q-signature=7bb3cd74b7dcdc1a8ad0d39d2593389ef5c9124b)
+![相等的树判断依据](https://zhuyue-1257159284.cos.ap-chengdu.myqcloud.com/LeetCode/LeetCode-100.png?q-sign-algorithm=sha1&q-ak=AKIDCQYGpV59vjVASnoZRMwLEBWmJkHoAzwb&q-sign-time=1556528395;1556529295&q-key-time=1556528395;1556529295&q-header-list=&q-url-param-list=&q-signature=ccdd566845c408e774524e6ef6b8793820ae0d3a)
 
 #### 注意
 
